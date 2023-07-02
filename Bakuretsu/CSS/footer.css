@@ -1,0 +1,94 @@
+
+/* FOOOOOOOOTTTTTTTTTTEEEERRRRRR */
+.footer {
+  height: 180px;
+  margin-top: 80px;
+/* background: green; */
+}
+
+.footer .box{
+  width: 450px;
+/* background: pink; */
+ /*  padding: 40px;*/
+  text-align: center;
+  margin: auto;
+  /* margin-top: 5%; */
+  color: black;
+  font-family: 'Roboto',sans-serif;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+   margin: -10px;
+  list-style: none;
+}
+.box li a{
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  transition: all ease-in-out 0.25s;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+.box li a:hover{
+  color: white;
+  background-color: black;
+}
+
+.paymentmodebox{
+  width: 450px;
+/*  background: rgba(0, 0, 0, 0.4);*/
+/*  padding: 40px; */
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+}
+/* .paymentmodebox ul li a {
+  cursor: context-menu;
+} */
+
+.paymentmodebox ul{
+  margin: 0;
+  padding: 0;
+}
+.paymentmodebox li{
+  display: inline-block;
+  /* margin: 2px;*/
+  list-style: none;
+}
+.paymentmodebox li a{
+  letter-spacing: -20px;
+  color: black;
+  text-decoration: none;
+  font-size: 35px;
+  transition: all ease-in-out 250ms;
+}
+/* .box li a:hover{
+  color: #b9b9b9;
+} */
+
+/* MODEL CREDIT
+.credits .content-credit .models {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.credits .content-credit a {
+  font-size: 1.20rem;
+}
+
+.credits .content-credit a {
+  text-transform: capitalize;
+}
+.credits {
+  margin-bottom: 1px;
+ /*  background: purple;
+}
+*/ 

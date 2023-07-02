@@ -1,0 +1,270 @@
+
+body
+{
+margin: 0;
+padding: 0;
+}
+
+
+
+ul {
+  list-style: none;
+
+
+}
+
+li {
+  display: inline-block;
+
+
+
+
+}
+
+.bakuretsu {
+  margin-top: 4rem;
+  margin-bottom: 1.3rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(91, 91, 91);
+  margin: 0 0.85rem;
+  text-transform: uppercase;
+
+}
+
+a:hover {
+  color: black;
+
+}
+
+H5 {
+  margin: 40px;
+  font-size: 1rem;
+
+}
+
+
+.mgadamit {
+position: relative;
+margin: 0;
+padding: 0;
+}
+
+.damitsu {
+  transform: scale(0.75);
+  margin: 5px;
+  /* postion: absolute; */
+  margin-top: -80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*container ng TEAM*/
+.container-TEAM {
+width: 1280px;
+/* min-height: 500px;
+background: pink; */
+margin: 70px auto ;
+display: flex;
+height: 80vh;
+background-color: transparent;
+font-family: Verdana;
+
+}
+.container2-TEAM {
+width: 1280px;
+/* min-height: 500px;
+background: pink; */
+margin: 70px auto 0;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+height: 80vh;
+background-color: transparent;
+font-family: Verdana;
+
+}
+.box1-TEAM {
+  max-width: 620px;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 0px 15px -5px grey;
+  height: 596px;
+}
+.box4-TEAM {
+  max-width: 620px;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 0px 15px -5px grey;
+  height: 596px;
+}
+#img-TEAM {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+}
+#img1-TEAM {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  width: 280px;
+  height: 300px;
+}
+#img2-TEAM {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  width: 280px;
+  height: 320px;
+}
+.name-TEAM {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.role-TEAM {
+  text-align: center;
+  font-size: 16px;
+  opacity: 50%;
+  margin-top: 0;
+}
+.quote-TEAM {
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-style: italic;
+  color: grey;
+  font-family: Lucida Console;
+  opacity: 50%;
+}
+.socials-TEAM {
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.ul-TEAM {
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+}
+.li-TEAM {
+  background-color: transparent;
+  list-style: none;
+  display: inline-flex;
+  font-size: 20px;
+}
+#icon-TEAM {
+  height: 30px;
+  width: 30px;
+}
+
+.box2-TEAM {
+  margin-left: 650px;
+  max-width: 630px;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  height: 596px;
+  align-items: center;
+  text-align: center;
+  /*box-shadow: inset 0px 0px 9px -5px;*/
+}
+.box4-TEAM {
+  margin-left: 650px;
+  max-width: 630px;
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  height: 596px;
+  align-items: center;
+  text-align: center;
+  /*box-shadow: inset 0px 0px 9px -5px;*/
+}
+.about-TEAM {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial;
+   margin-top: 150px;
+
+}
+.about-body-TEAM {
+  text-align: justify;
+  margin: 0 auto;
+  width: 560px;
+  font-size: 20px;
+  align-items: center;
+}
+.container-TEAM .box-TEAM
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: green;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.container-TEAM .box-TEAM .imgbox-TEAM
+{
+  position: relative;
+}
+
+.container-TEAM .box-TEAM .imgbox-TEAM img-TEAM
+{
+  max-width: 100%;
+}
+
+.imgbox-TEAM:hover {
+  transform: scale(1.082);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}

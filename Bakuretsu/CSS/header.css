@@ -1,0 +1,47 @@
+body
+{
+margin: 0;
+padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.bakuretsu {
+  margin-top: 4rem;
+  margin-bottom: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(91, 91, 91);
+  margin: 0 0.85rem;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: black;
+}
+
+H5 {
+  margin: 40px;
+  font-size: 1rem;
+}
+
+.mgadamit {
+position: relative;
+margin: 0;
+padding: 0;
+}
+
+.damitsu {
+  transform: scale(0.75);
+  margin: 5px;
+  /* postion: absolute; */
+  margin-top: -80px;
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b9d712cc5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main-style.css" />
+
+    <title>Hololive Productions</title>
+  </head>
+  <body>
+    <!-- MODAL ON LOAD -->
+    <div class="modal modal0" id="modal0">
+      <div class="modal-content">
+        <div class="text-content">
+          <p>
+            "Attention: Please be advised that this website contains light
+            patterns that may cause headaches or seizures for some viewers. If
+            you experience any discomfort, please stop viewing the website and
+            consult a medical professional. Viewer discretion is advised."
+          </p>
+          <p>This website is best viewed on Desktop Mode</p>
+        </div>
+      </div>
+      <button id="close-modal0" class="close-modal close-modal0">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    </div>
+
+    <!-- END OF MODAL ON LOAD -->
+
+    <!-- NAVBAR SECTION -->
+    <div class="background"></div>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul id="menu">
+        <!-- menu items -->
+        <div class="li-container">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="htmls/aboutus.html">ABOUT ME</a></li>
+          <li><a href="htmls/vtubers.html">VTUBERS</a></li>
+          <li><a href="htmls/aboutus.html#contactus">CONTACT US</a></li>
+        </div>
+        <div class="menu-girl" id="menuGirl">
+          <div class="logoOnMenu"></div>
+        </div>
+
+        <div class="visit-OfficialLink">
+          <p>OFFICIAL SITES</p>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg"
+            >hololive Ch.</a
+          >
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCotXwY6s8pWmuWd_snKYjhg"
+            >hololive English Ch.</a
+          >
+          <a target="_blank" href="https://hololive.hololivepro.com/en"
+            >hololive Pro</a
+          >
+        </div>
+      </ul>
+    </nav>
+    <!-- END OF NAVBAR SECTION -->
+
+    <!-- START OF LANDING PAGE -->
+    <div class="landing-page">
+      <p class="landing-quote">"Have you ever escaped the rabbit's hole?"</p>
+      <div class="bg-container">
+        <video
+          id="targetVideo"
+          src="Resources/Videos/Kurone BG1.m4v"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+      <button id="BTNchangeBG" onclick="changeVideo()">
+        <i class="fas fa-images"></i>
+        <p>Change Background</p>
+      </button>
+      <div class="logo"></div>
+    </div>
+
+    <!-- END OF LANDING PAGE -->
+    <!-- START OF SIDEBAR OPTIONS -->
+    <div class="sidebar">
+      <span>SOUND</span>
+      <button class="btnSpeaker">
+        <i class="fa fa-volume-up"></i>
+      </button>
+      <audio
+        id="BGMusic"
+        autoplay
+        loop
+        src="Resources/Audios/Kurone1.mp3"
+      ></audio>
+
+      <span>SHARE</span>
+      <button id="btnShareToTwitter" class="btnToShare">
+        <i class="fab fa-twitter"></i>
+      </button>
+
+      <button id="btnShareToFB" class="btnToShare">
+        <i class="fab fa-facebook"></i>
+      </button>
+
+      <button id="btnShareToLine" class="btnToShare">
+        <i class="fab fa-line"></i>
+      </button>
+    </div>
+    <!-- END OF SIDEBAR OPTIONS -->
+
+    <!-- START OF ABOUT WEBPAGE SECTION -->
+    <div class="about-section">
+      <h1>ABOUT</h1>
+      <div class="content-box">
+        <p>
+          Hololive is a virtual YouTuber agency and production company that
+          specializes in creating and promoting anime-style virtual YouTubers.
+          The company's main focus is on creating and promoting VTubers, who are
+          animated characters that are controlled by real people and are
+          streamed live on platforms like YouTube and Twitch. Hololive is based
+          in Indonesia and has a number of popular VTubers under its agency,
+          such as Kizuna Ai, Kaguya Luna, and Inugami Korone. Hololive also has
+          its own sub-agency, Hololive China, which focuses on promoting Chinese
+          VTubers.
+        </p>
+        <p>
+          Hololive has quickly become one of the most popular and well-known
+          virtual YouTuber agencies in the world, known for its high-quality
+          animation and charismatic VTubers. The agency's VTubers have large and
+          dedicated fanbases that follow their daily lives and interactions
+          through live streams, videos, and social media. Hololive's VTubers
+          entertain their fans with a wide range of content, including gaming,
+          music, comedy, and more.
+        </p>
+        <p>
+          In addition to creating and promoting VTubers, Hololive also has its
+          own music label, Hololive Music, which produces and publishes music
+          made by VTubers. Hololive has also expanded to other countries,
+          creating their own sub-agencies like Hololive China, Hololive English,
+          and Hololive Rusia, to promote VTubers from those countries.
+        </p>
+        <button><a href="htmls/learnmore.html"> LEARN MORE</a></button>
+      </div>
+    </div>
+    <!-- END OF ABOUT WEBPAGE SECTION -->
+
+    <!-- START OF ABOUT THE GAME SECTION -->
+    <div class="aboutGame-section">
+      <h1>'HOLOLIVE ERROR' GAME FOR DOWNLOAD</h1>
+      <p>
+        hololive ERROR is a horror game project, featuring six main Hololive
+        talents such as Tokino Sora, Momosuzu Nene, Aki Rosenthal, Shirakami
+        Fubuki, Natsuiro Matsuri, and Yukihana Lamy.
+      </p>
+      <button>
+        <a
+          target="_blank"
+          class="game-link"
+          href="https://store.steampowered.com/app/2062550/hololive_ERROR/#:~:text=In%20the%20world%20of%20hololive,and%20escape%20from%20the%20school%3F"
+        >
+          hololive ERROR Game Link &nbsp;<i class="fas fa-download"></i>
+        </a>
+      </button>
+      <div class="content-box">
+        <h2>About This Game</h2>
+        <p>
+          hololive ERROR: the Game is a first-person horror game based on the
+          hololive ERROR series of 2D narrative films. Players unfamiliar with
+          the story video series can enjoy the game, but those who have seen the
+          movies will be rewarded with deeper insights and comprehension. We
+          invite interested players to see the tale films and other hololives.
+        </p>
+
+        <h2>Story</h2>
+        <p>
+          The story takes place in the town of Aogami, which has an uneasy
+          reputation in various circles due to the legends and happenings that
+          surround it. The main character is an occult magazine journalist who
+          is following a clue left by his late grandfather, also a journalist.
+          His investigation leads him to Aogami, where he encounters ghostly
+          events. He's in his hotel room one minute, going through his notes and
+          drafting his piece, and the next he's strolling the corridors of a
+          mysterious school building.
+        </p>
+      </div>
+    </div>
+    <!-- END OF ABOUT THE GAME SECTION -->
+
+    <!-- START OF CHARACTERS SECTION -->
+    <div class="character-section">
+      <h1>CHARACTERS</h1>
+
+      <div class="content-box">
+        <!-- CHARACTER 1 -->
+        <img src="Resources/Background/newspaper1.jpg" alt="Newspaper" />
+        <button class="char1 char-btn" id="char1"></button>
+        <button class="char2 char-btn" id="char2"></button>
+        <button class="char3 char-btn" id="char3"></button>
+        <button class="char4 char-btn" id="char4"></button>
+        <button class="char5 char-btn" id="char5"></button>
+        <button class="char6 char-btn" id="char6"></button>
+        <button class="char7 char-btn" id="char7"></button>
+      </div>
+
+      <div class="modal modal1" id="modal1">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/1.png" alt="char1" />
+          <div class="text-content">
+            <p>Tokino Sora &lt; Diary of a female student ></p>
+            <p>
+              During today's lunch break, I visited the broadcasting department.
+              I never thought I would be appearing as a guest on Kana-san's
+              broadcast... It is a secret that I was very nervous. But really, I
+              only have good friends around me...
+            </p>
+            <p>
+              I can't believe I can spend every day happily like this. oh...i'm
+              so happy
+            </p>
+          </div>
+        </div>
+        <button id="close-modal1" class="close-modal close-modal1">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 1 -->
+
+      <!-- CHARACTER 2 -->
+
+      <div class="modal modal2" id="modal2">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/2.png" alt="char2" />
+          <div class="text-content">
+            <p>&lt; Minato Aqua ></p>
+            <p>
+              A member of the broadcasting club at Aogami High School. He likes
+              to talk and has a cheerful and lively personality. He is a
+              childhood friend of Kanade, and is close enough to act together
+              all the time.
+            </p>
+            <p>
+              In addition, it is not uncommon for Kanade to be called as a guest
+              on the school broadcast. He is a true leader, but he also has a
+              sensitive side, but he never shows that part.
+            </p>
+          </div>
+        </div>
+        <button id="close-modal2" class="close-modal close-modal1">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 2 -->
+
+      <!-- CHARACTER 3 -->
+
+      <div class="modal modal3" id="modal3">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/3.png" alt="char3" />
+          <div class="text-content">
+            <p>&lt; Amane Kanata ></p>
+            <p>
+              A girl who doesn't have a lot of self-assertion, but has a kind
+              heart. He also has a good understanding of his childhood friend
+              Kana.
+            </p>
+            <p>
+              Ever since I was a child, I have admired Kana's high social
+              skills, and I want to be able to speak in public like Kana. He
+              doesn't know that he is getting better at speaking every time he
+              is invited to the broadcasting room as a guest.
+            </p>
+          </div>
+        </div>
+        <button id="close-modal3" class="close-modal close-modal3">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 3 -->
+
+      <!-- CHARACTER 4 -->
+
+      <div class="modal modal4" id="modal4">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/4.png" alt="char4" />
+          <div class="text-content">
+            <p>&lt; Shiranui Flare ></p>
+            <p>
+              She has a frank and dependable personality and is the center of
+              the class. I have a penchant for cute things, and I have a lot of
+              stuffed animals in my room. He likes to talk and was once invited
+              by Kana as a guest on a broadcast.
+            </p>
+            <p>
+              At that time, it seems that he was angry after the broadcast
+              because he was the only one who talked too much from beginning to
+              end. I get embarrassed when I am praised.
+            </p>
+          </div>
+        </div>
+        <button id="close-modal4" class="close-modal close-modal4">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 4 -->
+
+      <!-- CHARACTER 5 -->
+
+      <div class="modal modal5" id="modal5">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/5.png" alt="char5" />
+          <div class="text-content">
+            <p>&lt; Himemori Luna></p>
+            <p>
+              A soothing girl who gives off a strong impression. You can't
+              imagine from that calm atmosphere, but I have my own thoughts
+              firmly. She likes lively places and often window-shops in front of
+              Aogami Station.
+            </p>
+            <p>
+              Luna has a similar fluffy atmosphere, and although she
+              occasionally plays, If it's just the two of them, the conversation
+              won't last long, and that's what makes them smile.
+            </p>
+          </div>
+        </div>
+        <button id="close-modal5" class="close-modal close-modal5">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 5 -->
+
+      <!-- CHARACTER 6 -->
+
+      <div class="modal modal6" id="modal6">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/6.png" alt="char6" />
+          <div class="text-content">
+            <p>&lt; Roboco ></p>
+            <p>
+              She says that he loves being with everyone more than eating three
+              meals a day, and that he enjoys being at school more than his days
+              off. He likes singing very much and invites everyone to karaoke
+              almost every day. However, I noticed that I was gradually getting
+              rejected, and now I'm forcing everyone to play karaoke during
+              lunch break.
+            </p>
+            <p>
+              While the people around him were puzzled, he said with
+              satisfaction that the singing ability of the whole class was
+              gradually improving.
+            </p>
+          </div>
+        </div>
+        <button id="close-modal6" class="close-modal close-modal6">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 6 -->
+
+      <!-- CHARACTER 7 -->
+
+      <div class="modal modal7" id="modal7">
+        <h1>CHARACTERS</h1>
+        <div class="modal-content">
+          <img src="Resources/chars2/7.png" alt="char7" />
+          <div class="text-content">
+            <p>&lt; Houshou Marine ></p>
+            <p>
+              A girl who is a student at Aogami High School in the Showa era and
+              loves to draw. Although it is in a calm atmosphere, it has an
+              atmosphere that is somewhat fascinated by its friendly
+              personality.I practiced drawing on the palette in the art
+              preparation room almost every day. But one day, after a severe
+              headache, he went mad...
+            </p>
+            <p>
+              As a result, I was able to draw a picture that no one could draw,
+              but the price was too great.
+            </p>
+          </div>
+        </div>
+        <button id="close-modal7" class="close-modal close-modal7">
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <!-- END OF CHARACTER 7 -->
+    </div>
+
+    <!-- END OF CHARACTERS SECTION -->
+
+    <!-- START OF FOOTER -->
+    <section class="footer">
+      <div class="logoPlain"></div>
+      <div class="col-1">
+        <h2>SECURITY & BRAND</h2>
+        <a href="Resources/Notes/Data Privacy Notice.pdf" target="_blank"
+          ><i class="fas fa-angle-right"></i> Data Privacy Notice</a
+        >
+        <a href="Resources/Notes/Security Notice.pdf" target="_blank"
+          ><i class="fas fa-angle-right"></i> Security Notice</a
+        >
+        <a href="Resources/Notes/Copyright Infringement.pdf" target="_blank"
+          ><i class="fas fa-angle-right"></i> Copyright Infringement</a
+        >
+      </div>
+      <div class="col-2">
+        <h2>GET IN TOUCH</h2>
+        <p>j.camon20643@mcc.edu.ph</p>
+        <p>(+63) 936-666-6919</p>
+        <a target="_blank" href="http://www.facebook.com/4510471.cz2128"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://twitter.com/rickyricksmusic/status/1613739671024193537?cxt=HHwWgsDStcnrk-UsAAAA"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+      <div class="col-3">
+        <h2>LOCATE US</h2>
+        <p>
+          <i class="fas fa-angle-right"></i> Rizal St., Barangay Dolores,
+          Mabalacat City, Pampanga
+        </p>
+        <p>
+          <i class="fas fa-angle-right"></i> Mawaque Rd., Barangay Dapdap,
+          Mabalacat City, Pampanga
+        </p>
+      </div>
+    </section>
+    <div class="references">
+      <p>No Copyright Infringement Intended</p>
+      <p>All links and materials used belongs to their respective owners.</p>
+    </div>
+    <!-- END OF FOOTER -->
+
+    <!-- SCRIPT -->
+    <script src="main-script.js"></script>
+  </body>
+</html>

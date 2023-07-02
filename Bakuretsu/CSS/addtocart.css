@@ -1,0 +1,467 @@
+/* CSS ITO NANG ADD TO CART*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Column container */
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+}
+
+/*LEFT SIDE*/
+* {
+  box-sizing: border-box;
+}
+
+.leftside {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+  /*  background-color: pink; */
+  /*  padding: 20px; */
+}
+
+/*RIGHT SIDE*/
+.rightside {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+  /*  background-color: orange; */
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+/* im experimenting regarding the 50% divition of the two sides of the body
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+*/
+/*THIS PART IS THE SLIDER EFFECT IN THE LEFT SIDE OF THE ADDTOCART IMAGE*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  position: relative;
+  /* background: blue; */
+  margin-left: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  /* I added this one */
+  text-align: center;
+  margin: auto;
+  height: 654.5px;
+  width: 654.5px;
+}
+
+.mySlides img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 20px;
+  padding: 30px 25px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  margin: auto;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.8;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*THIS PART IS THE CSS OF THE RIGHT SIDE*/
+.rightside {
+  padding-left: 60px;
+}
+
+.rightside h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.labelsize {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.selectfield {
+  border: 2px solid black;
+  padding: 8px 30px 8px 10px;
+  font-size: 17px;
+}
+
+.labelquantity {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.inputquantity {
+  border: 2px solid black;
+  padding: 4px 10px;
+  font-size: 17px;
+}
+
+.quantity-label {
+  margin: 0 0 8px;
+}
+
+.quote {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.description {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.shop-item-button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+  width: 25%;
+  font-family: calibri;
+  font-weight: bold;
+}
+
+.shop-item-button:hover {
+  opacity: 0.7;
+}
+
+/*TABLE CSS*/
+.tablemargin {
+  margin-bottom: 100px;
+}
+
+th {
+  background-color: rgba(180, 180, 180, 0.74);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 30px 30px 10px 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.table-indent {
+  padding-right: 80px;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.table-row {
+  background-color: rgba(233, 233, 233, 0.7);
+}
+
+tr {
+  border: 0;
+}
+
+.tabledesc {
+  font: 16px Roboto;
+  font-weight: bold;
+
+  margin-left: 20px;
+}
+
+/* ADD TO CART STYLE*************/
+
+/*
+.container3 {
+    max-width: 97.5%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    border-top: 2px solid rgb(208, 208, 208);
+    border-bottom: 2px solid rgb(208, 208, 208);
+    background: orange;
+}
+*/
+.content-section {
+  margin: 1em;
+  /* background: rgba(218, 218, 218, 0.18);*/
+  background: linear-gradient(to right,
+      rgba(209, 209, 209, 0.12),
+      rgba(199, 199, 199, 0.25),
+      rgba(209, 209, 209, 0.12));
+  width: 98%;
+}
+
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  /*font-size: 2.5em; */
+  margin-right: 50px;
+}
+
+.cart-row {
+  display: flex;
+  width: 100%;
+}
+
+.cart-item {
+  width: 20%;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  width: 20%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  /* color: PINK; */
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  width: 20%;
+}
+
+.cart-quantity {
+  width: 35%;
+  /*margin-left: 7px; */
+  /*background: YELLOW; */
+}
+
+.cart-quantity1 {
+  width: 35%;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* BACKGROUND-COLOR: magenta; */
+  max-width: 1400px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 70px auto 80px auto;
+  padding: 12px;
+
+  font-size: 1.75em;
+  font-family: calibri;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 20%;
+  transform: scale(0.8);
+}
+
+.btn-purchase:hover {
+  opacity: 0.7;
+}
+
+.cart-icon {
+  font-size: 23px;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+  margin-left: 15px;
+  /*background: green;*/
+}
+
+.cart-price1 {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+  margin-left: 10px;
+  /*  background: yellow; */
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+/* I ADDED ALL OF THIS */
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  /*  border: 1px solid #56CCF2; */
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}

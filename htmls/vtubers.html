@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b9d712cc5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="vtubers.css" />
+
+    <title>VTUBERS - Hololive Productions</title>
+  </head>
+  <body>
+    <!-- START OF NAVBAR -->
+    <nav>
+      <img class="brand-logo" src="resources/logo.png" alt="logo" />
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul id="menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT ME</a></li>
+        <li><a href="vtubers.html">VTUBERS</a></li>
+        <li><a href="aboutus.html#contactus">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <!-- START OF LANDING PAGE -->
+    <div class="landing-page">
+      <div class="title"><h1>VTUBERS</h1></div>
+    </div>
+    <!-- END OF LANDING PAGE -->
+    <!-- FILTER BUTTON SECTION -->
+    <div class="filterBtn-section">
+      <h1>CATEGORIES</h1>
+
+      <div class="filter-box">
+        <button
+          onclick="showAll()"
+          class="btnAll filter-btn filter-btnAll"
+          id="btnAll"
+        >
+          ALL
+        </button>
+        <button onclick="filter('gen0')" class="btnGen0 filter-btn" id="gen0">
+          GEN 0
+        </button>
+        <button onclick="filter('gen1')" class="btnGen1 filter-btn" id="gen1">
+          GEN 1
+        </button>
+        <button onclick="filter('gen2')" class="btnGen2 filter-btn" id="gen2">
+          GEN 2
+        </button>
+        <button onclick="filter('gen3')" class="btnGen3 filter-btn" id="gen3">
+          GEN 3
+        </button>
+        <button onclick="filter('gen4')" class="btnGen4 filter-btn" id="gen4">
+          GEN 4
+        </button>
+        <button onclick="filter('gen5')" class="btnGen5 filter-btn" id="gen5">
+          GEN 5
+        </button>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <!-- GEN 0 -->
+          <div class="thumbCard card1">
+            <a href="cards/card1.html">
+              <button class="all gen0"></button>
+            </a>
+            <p>Tokino Sora</p>
+          </div>
+
+          <div class="thumbCard card2">
+            <a href="cards/card2.html">
+              <button class="all gen0"></button>
+            </a>
+            <p>Robocosan</p>
+          </div>
+
+          <div class="thumbCard card3">
+            <a href="cards/card3.html">
+              <button class="all gen0"></button>
+            </a>
+            <p>AZKi</p>
+          </div>
+
+          <div class="thumbCard card4">
+            <a href="cards/card4.html">
+              <button class="all gen0"></button>
+            </a>
+            <p>Sakura Miko</p>
+          </div>
+
+          <div class="thumbCard card5">
+            <a href="cards/card5.html">
+              <button class="all gen0"></button>
+            </a>
+            <p>Hoshimachi Suisei</p>
+          </div>
+
+          <!-- GEN 1 -->
+
+          <div class="thumbCard card6">
+            <a href="cards/card6.html">
+              <button class="all gen1"></button>
+            </a>
+            <p>Yozora Mel</p>
+          </div>
+
+          <div class="thumbCard card7">
+            <a href="cards/card7.html">
+              <button class="all gen1"></button>
+            </a>
+            <p>Aki Rosenthal</p>
+          </div>
+
+          <div class="thumbCard card8">
+            <a href="cards/card8.html">
+              <button class="all gen1"></button>
+            </a>
+            <p>Akai Haato</p>
+          </div>
+
+          <div class="thumbCard card9">
+            <a href="cards/card9.html">
+              <button class="all gen1"></button>
+            </a>
+            <p>Shirakami Fubuki</p>
+          </div>
+
+          <div class="thumbCard card10">
+            <a href="cards/card10.html">
+              <button class="all gen1"></button>
+            </a>
+            <p>Natsuiro Matsuri</p>
+          </div>
+
+          <!-- GEN 2 -->
+
+          <div class="thumbCard card11">
+            <a href="cards/card11.html">
+              <button class="all gen2"></button>
+            </a>
+            <p>Minato Aqua</p>
+          </div>
+
+          <div class="thumbCard card12">
+            <a href="cards/card12.html">
+              <button class="all gen2"></button>
+            </a>
+            <p>Murasaki Shion</p>
+          </div>
+
+          <div class="thumbCard card13">
+            <a href="cards/card13.html">
+              <button class="all gen2"></button>
+            </a>
+            <p>Nakiri Ayame</p>
+          </div>
+
+          <div class="thumbCard card14">
+            <a href="cards/card14.html">
+              <button class="all gen2"></button>
+            </a>
+            <p>Yuzuki Choco</p>
+          </div>
+
+          <div class="thumbCard card15">
+            <a href="cards/card15.html">
+              <button class="all gen2"></button>
+            </a>
+            <p>Oozora Subaru</p>
+          </div>
+
+          <!-- GEN 3 -->
+          <div class="thumbCard card16">
+            <a href="cards/card16.html">
+              <button class="all gen3"></button>
+            </a>
+            <p>Usada Pekora</p>
+          </div>
+
+          <div class="thumbCard card17">
+            <a href="cards/card17.html">
+              <button class="all gen3"></button>
+            </a>
+            <p>Shiranui Flare</p>
+          </div>
+
+          <div class="thumbCard card18">
+            <a href="cards/card18.html">
+              <button class="all gen3"></button>
+            </a>
+            <p>Shirogane Noel</p>
+          </div>
+
+          <div class="thumbCard card19">
+            <a href="cards/card19.html">
+              <button class="all gen3"></button>
+            </a>
+            <p>Houshou Marine</p>
+          </div>
+
+          <!-- GEN 4 -->
+          <div class="thumbCard card20">
+            <a href="cards/card20.html">
+              <button class="all gen4"></button>
+            </a>
+            <p>Amane Kanata</p>
+          </div>
+
+          <div class="thumbCard card21">
+            <a href="cards/card21.html">
+              <button class="all gen4"></button>
+            </a>
+            <p>Tsunomaki Watame</p>
+          </div>
+
+          <div class="thumbCard card22">
+            <a href="cards/card22.html">
+              <button class="all gen4"></button>
+            </a>
+            <p>Tokoyami Towa</p>
+          </div>
+
+          <div class="thumbCard card23">
+            <a href="cards/card23.html">
+              <button class="all gen4"></button>
+            </a>
+            <p>Himemori Luna</p>
+          </div>
+
+          <div class="thumbCard card24">
+            <a href="cards/card24.html">
+              <button class="all gen4"></button>
+            </a>
+            <p>Kiryu Coco</p>
+          </div>
+
+          <!-- GEN 5 -->
+          <div class="thumbCard card25">
+            <a href="cards/card25.html">
+              <button class="all gen5"></button>
+            </a>
+            <p>Yukihana Lamy</p>
+          </div>
+
+          <div class="thumbCard card26">
+            <a href="cards/card26.html">
+              <button class="all gen5"></button>
+            </a>
+            <p>Momosuzu Nene</p>
+          </div>
+
+          <div class="thumbCard card27">
+            <a href="cards/card27.html">
+              <button class="all gen5"></button>
+            </a>
+            <p>Shishiro Botan</p>
+          </div>
+
+          <div class="thumbCard card28">
+            <a href="cards/card28.html">
+              <button class="all gen5"></button>
+            </a>
+            <p>Omaru Polka</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF CHARACTER 1 -->
+
+    <!-- END OF FILTER BUTTON SECTION -->
+
+    <!-- START OF FOOTER -->
+    <section class="footer">
+      <div class="logoPlain"></div>
+      <div class="col-1">
+        <h2>SECURITY & BRAND</h2>
+        <a href="Resources/Notes/Data Privacy Notice.pdf" target="_blank"
+          ><i class="fas fa-angle-right"></i> Data Privacy Notice</a
+        >
+        <a href="Resources/Notes/Security Notice.pdf" target="_blank"
+          ><i class="fas fa-angle-right"></i> Security Notice</a
+        >
+        <a href="Resources/Notes/Copyright Infringement.pdf" target="_blank"
+          ><i class="fas fa-angle-right"></i> Copyright Infringement</a
+        >
+      </div>
+      <div class="col-2">
+        <h2>GET IN TOUCH</h2>
+        <p>j.camon20643@mcc.edu.ph</p>
+        <p>(+63) 936-666-6919</p>
+        <a target="_blank" href="http://www.facebook.com/4510471.cz2128"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://twitter.com/rickyricksmusic/status/1613739671024193537?cxt=HHwWgsDStcnrk-UsAAAA"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+      <div class="col-3">
+        <h2>LOCATE US</h2>
+        <p>
+          <i class="fas fa-angle-right"></i> Rizal St., Barangay Dolores,
+          Mabalacat City, Pampanga
+        </p>
+        <p>
+          <i class="fas fa-angle-right"></i> Mawaque Rd., Barangay Dapdap,
+          Mabalacat City, Pampanga
+        </p>
+      </div>
+    </section>
+    <div class="references">
+      <p>No Copyright Infringement Intended</p>
+      <p>All links and materials used belongs to their respective owners.</p>
+    </div>
+    <!-- END OF FOOTER -->
+
+    <!-- SCRIPT -->
+    <script src="vtubers.js"></script>
+  </body>
+</html>
